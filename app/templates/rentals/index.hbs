@@ -1,0 +1,7 @@
+{{#list-filter filter=(action 'filterByCity') as |rentals|}}
+<ul class="results">
+    {{#each rentals as |laptopUnit|}}
+    <li>{{rental-listing laptop=laptopUnit}}</li>
+    {{/each}}
+</ul>
+{{/list-filter}}

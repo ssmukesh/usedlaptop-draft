@@ -1,0 +1,13 @@
+<article class="listing">
+    <a {{action 'toggleImageSize'}} class="image {{if isWide " wide "}}">
+        <img src="{{laptop.photo}}" alt="">
+        <small>View Larger</small>
+    </a>
+    <h3>{{#link-to "rentals.show" laptop}}{{laptop.name}}{{/link-to}}</h3>
+    <div class="detail owner">
+        <span>Brand:</span> {{laptop.brand}}
+    </div>
+    <div class="detail type">
+        <span>Price:</span> {{laptop.price}}
+    </div>
+</article>
